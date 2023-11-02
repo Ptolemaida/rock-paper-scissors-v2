@@ -21,11 +21,11 @@ input.onGesture(Gesture.Shake, function () {
         music.playSoundEffect(music.createSoundEffect(WaveShape.Sine, 5000, 0, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (χέρι == 0) {
         basic.showLeds(`
-            . . . . #
-            . . . # .
-            # . # . .
-            . # . . .
-            . # . . .
+            . . # . .
+            . # # . .
+            . . # . .
+            . . # . .
+            . # # # .
             `)
         music.playSoundEffect(music.createSoundEffect(WaveShape.Square, 400, 600, 255, 0, 1000, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else {
