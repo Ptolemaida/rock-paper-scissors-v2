@@ -1,6 +1,6 @@
 let χέρι = 0
 input.onGesture(Gesture.Shake, function () {
-    χέρι = randint(0, 3)
+    χέρι = randint(1, 4)
     if (χέρι == 1) {
         basic.showLeds(`
             # # # # #
@@ -19,7 +19,7 @@ input.onGesture(Gesture.Shake, function () {
             . . . . .
             `)
         music.playSoundEffect(music.createSoundEffect(WaveShape.Sine, 5000, 0, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
-    } else if (χέρι == 0) {
+    } else if (χέρι == 3) {
         basic.showLeds(`
             . . # . .
             . # # . .
